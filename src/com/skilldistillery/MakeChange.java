@@ -19,10 +19,10 @@ public class MakeChange {
 		}
 	}
 
-//		takes double and casts to int and multiplication to remove inconsistent decimal calculation of double
+//		takes double and casts to int
+//		multiplication to remove inconsistent decimal calculation of double data type
 	public static int getOwed(double priceOfItem, double amountTendered) {
 		int change = (int) ((amountTendered * 100) - (priceOfItem * 100));
-//			System.out.println(change);
 		return change;
 	}
 
